@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="WArp.exe" version="1.0.0.2" publicKeyToken="0a9acdf0469dfafe" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="WArp" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="WArp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WArp.exe" size="6080">
+      <assemblyIdentity name="WArp" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>osEOoPE1JktXn9gRZSey+UEfHmQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="WArp.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>06MAsbgFUGlKhu1U3KJ4fh8CRLU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=THE-KRACKEN\Josh" issuerKeyHash="099ca2ba875c9b3ef45c0ade80d24909d30563a8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>DwLuuYfW2Ghg1ehw0NrtHQuO2mY=</DigestValue></Reference></SignedInfo><SignatureValue>GnKMaq5f9vO0DKnA5x0/A8gm/NatN16EX8FQxDVkFL/Tm111skrE4+ypMLDk8atLnis2vIsmUiXv7SDQ6W0JD81JwAM9W5GI0ChaX1lHSMItSDOVN3KCVYPGaaj6wdG28oZYaZirrBI0oN5CtNRgtFXtHgZsJLislYpOeXyqmZ8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>oVQNJXpumDuDxNSUHHm6KLS5dpFlCgKjmqn+1y4qq5WcMmNbLGxdLwODS2N8danIWEFiBjSJ4v+A0KIFfUjjkwYji0QX9i61wbbPKr5zS3jqaLrODgWDmLX/s1Eky6dL5GyPLqh7wn4/5zJWJ0O2eFOF0BL3FyLLqw2kNhFhOak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="66da8e0b1deddad070e8d56068d8d687b9ee020f" Description="" Url=""><as:assemblyIdentity name="WArp.exe" version="1.0.0.2" publicKeyToken="0a9acdf0469dfafe" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=THE-KRACKEN\Josh</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>EmZo5LwEnGjHGOoInD6jPGtrjKg=</DigestValue></Reference></SignedInfo><SignatureValue>OyctfcZx2HorAj36E/HFB1/OaRy6fvJwPRgdNnsz0ycnWWg4fwMHwWDUWg2AcZUJOdtDGZDfPke6E+j0tQKJMuZhRLW+6o3j/G8xedNZycU4uGwmPz0hMeW21s6ESgnHwfqrhytDwin7bQcvbXEnlneo3pMxtsBz5ofrNArSfnk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>oVQNJXpumDuDxNSUHHm6KLS5dpFlCgKjmqn+1y4qq5WcMmNbLGxdLwODS2N8danIWEFiBjSJ4v+A0KIFfUjjkwYji0QX9i61wbbPKr5zS3jqaLrODgWDmLX/s1Eky6dL5GyPLqh7wn4/5zJWJ0O2eFOF0BL3FyLLqw2kNhFhOak=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQNUTUW4GlbatMzDaJbmzDeDANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAVABIAEUALQBLAFIAQQBDAEsARQBOAFwASgBvAHMAaDAeFw0xOTA4MTYwMzE2MTVaFw0yMDA4MTUwOTE2MTVaMCsxKTAnBgNVBAMeIABUAEgARQAtAEsAUgBBAEMASwBFAE4AXABKAG8AcwBoMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQChVA0lem6YO4PE1JQcebootLl2kWUKAqOaqf7XLiqrlZwyY1ssbF0vA4NLY3x1qchYQWIGNIni/4DQogV9SOOTBiOLRBf2LrXBts8qvnNLeOpous4OBYOYtf+zUSTLp0vkbI8uqHvCfj/nMlYnQ7Z4U4XQEvcXIsurDaQ2EWE5qQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAIxXNAG2KeEK6Hi4uSSHC+rsHqOvApWvzElyKJmgYuNNsYUWihJVVpOSlCOJMoR5N/sC2RhDfemi+3copVlBDaTk0rpKttGgzN+krHFtSPvlBC1fT2YMR92axZMEcYOhyyZOnOgJbhcLSHpdpPUZ9Pxl5q0+NsufMDtYK+xw9ai3</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
